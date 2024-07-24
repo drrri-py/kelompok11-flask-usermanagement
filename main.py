@@ -5,7 +5,7 @@ from flask_bcrypt import Bcrypt
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = '2a831d6c294e7d8703f0be6a'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://fid2:12345@localhost:3306/pbo2'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://user:password@localhost:3306/namadatabase'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = 'filesystem'
